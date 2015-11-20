@@ -548,7 +548,8 @@ var ImportJS = (function () {
 
     //Function to kick off filesArr parsing
     var loadPackageScripts = function() {
-      for(var i = 0; i < filesArr.length; i++) {
+      var arraylength = filesArr.length;
+      for(var i = 0; i < arraylength; i++) {
         loadScript(filesArr[i].path, filesArr[i].pkg);
       }
     };
